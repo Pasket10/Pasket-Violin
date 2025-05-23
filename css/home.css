@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #23262b;
+}
+
+body {
+    background-color: var(--background-color);
+    /* color: var(--text-color); */
+    font-family: 'Arial', sans-serif;
+}
+
+/* header */
+
+.header{
+    /* background-color: #ff5f; */
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 10px 8px 0px #888888 inset;
+}
+
+.header__logo a{
+    /* font-size: 30px; */
+    /* font-weight: 700; */
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+
+/* Menu */
+.header__nav ul {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+}
+
+.header__nav ul >li {
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.header__nav ul >li a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header__nav ul >li a:hover{
+    text-decoration: underline;
+}
+
+/* Presentation */
+.presentation {
+    background-image: url("/asset/images/background1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.presentaion_content {
+    display: flex;
+    margin-left: 500px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 30px;
+    text-justify: inter-word;
+    
+}
+
+.text {
+    font-size: 50px;
+    color: var(--text-color);
+}
+
+.reservation {
+    background-color: #F3EFE8;
+    color: black;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 250px;
+}
+
+.reservation:hover {
+    background-color: var(--text-color);
+    color: #F3EFE8;
+}
+
+/* info */
+
+
+/* Footer */
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    /* background-color: var(--text-color); */
+}
+
+.social_media {
+    display: flex;
+    gap: 50px;
+}
+
+
+/* Info page */
+.info {
+    background-image: url(/asset/images/bacgroung2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
