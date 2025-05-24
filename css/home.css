@@ -92,9 +92,15 @@ body {
     margin-left: 250px;
 }
 
+span {
+    background-color: #eaaf48;
+    animation: bounceIn;
+    animation-duration: 5s;
+}
+
 .reservation:hover {
-    background-color: var(--text-color);
-    color: #F3EFE8;
+    background-color: #eaaf48;
+    color: var(--text-color);
 }
 
 /* info */
@@ -121,4 +127,47 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+}
+
+.name {
+    font-size: 30px;
+    color: var(--text-color);
+    margin-left: 90px;
+    padding: 160px 0 50px 0;
+
+    animation: bounceInDown;
+    animation-duration: 1.5s;
+}
+
+.coordonee {
+    display: flex;
+    gap: 50px;
+    margin-left: 90px;
+    padding: 20px 0;
+}
+
+.coordonee ul>li {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    font-size: 25px;
+    color: var(--text-color);
+    padding: 10px;
+}
+
+.coordonee ul>li img {
+    padding: 13px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    background-color: #eaaf48;
+}
+
+.coordonee ul>li p {
+    margin-top: 20px;
+    animation: pulse;
+    
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
 }
