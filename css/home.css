@@ -1,16 +1,24 @@
 * {
+    font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 :root {
-    --background-color: #f4f4f4;
+    --background-color: rgb(235, 234, 234);
+    --background-prinp: #F6F4F2;
     --text-color: #23262b;
+    --survol: #8A4D36;
+    --bouton: 	#C59C7E;
+    --btn_hover: #3f444d;
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--background-prinp);
     /* color: var(--text-color); */
     font-family: 'Arial', sans-serif;
 }
@@ -56,23 +64,22 @@ body {
 }
 
 /* Presentation */
-
 .presentation {
     background-image: url("/asset/images/background1.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 675px;
+    padding: 0 30px 0 400px;
 }
 
 .presentaion_content {
     display: flex;
-    margin-left: 500px;
+    /* margin-left: 500px; */
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 30px;
     text-justify: inter-word;
-    
+    text-align: justify;
 }
 
 .text {
@@ -81,8 +88,8 @@ body {
 }
 
 .reservation {
-    background-color: #F3EFE8;
-    color: black;
+    /* background-color: #F3EFE8; */
+    color: #F3EFE8;
     padding: 20px 50px;
     border: none;
     border-radius: 10px;
@@ -90,17 +97,12 @@ body {
     font-size: 20px;
     cursor: pointer;
     margin-left: 250px;
-}
-
-span {
-    background-color: #eaaf48;
-    animation: bounceIn;
-    animation-duration: 5s;
+    background-color: var(--text-color);
 }
 
 .reservation:hover {
-    background-color: #eaaf48;
-    color: var(--text-color);
+    background-color: var(--btn_hover);
+    color: #F3EFE8;
 }
 
 /* info */
@@ -129,45 +131,116 @@ span {
     height: 100vh;
 }
 
-.name {
-    font-size: 30px;
-    color: var(--text-color);
-    margin-left: 90px;
-    padding: 160px 0 50px 0;
-
-    animation: bounceInDown;
-    animation-duration: 1.5s;
+/* Story */
+.story {
+    padding: 30px;
+    margin-top: 80px;
 }
 
-.coordonee {
+.story_title {
+    text-align: center;
+}
+
+.story_content {
     display: flex;
-    gap: 50px;
-    margin-left: 90px;
-    padding: 20px 0;
-}
-
-.coordonee ul>li {
-    display: flex;
-    gap: 50px;
-    list-style: none;
-    font-size: 25px;
-    color: var(--text-color);
-    padding: 10px;
-}
-
-.coordonee ul>li img {
-    padding: 13px;
     justify-content: center;
     align-items: center;
-    border: none;
-    border-radius: 50%;
-    background-color: #eaaf48;
+    height: 350px;
+    padding: 50px;
+    gap: 70px;
 }
 
-.coordonee ul>li p {
-    margin-top: 20px;
-    animation: pulse;
-    
-        animation-duration: 1.5s;
-        animation-iteration-count: infinite;
+.story_content_text {
+    text-align: center;
+    width: 50%;
+    text-align: justify;
 }
+
+.story_content_text h3 {
+    color: var(--survol);
+}
+
+.story_content_img {
+    width: 35%;
+    /* height: 100%; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.story_content_img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Service */
+.services_title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+}
+.service_item h3 {
+    margin-top: 20px;
+}
+
+.services {
+    background-color: var(--background-color);
+    padding: 70px;
+    margin-top: 80px;
+    height: 100%;
+}
+
+.services_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    padding: 50px;
+    gap: 60px;
+}
+
+.service_item {
+    width: 30%;
+    height: 110%;
+    background-color: var(--background-prinp);
+    padding: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.service_item:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 40px -10px, rgba(0, 0, 0, 0.3) 0px 15px 30px -15px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transform: scale(1.05);
+    transition: all .5s ease-in-out;
+}
+
+.service_item img {
+    color: var(--survol);
+}
+
+.service_item p {
+    text-align: justify;
+    
+}
+
+.appointment {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.appo {
+    background-color: var(--text-color);
+    color: #F3EFE8;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.appo:hover {
+    background-color: var(--btn_hover);
+    color: #F3EFE8;
+}
+
