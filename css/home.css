@@ -68,7 +68,7 @@ body {
     height: 675px;
     padding: 0 30px 0 400px;
     position: relative;
-    background: url(../asset/images/background1.png) no-repeat center center fixed;
+    background: url(../asset/images/background1.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -110,15 +110,6 @@ body {
 .reservation:hover {
     background-color: var(--btn_hover);
     color: #F3EFE8;
-}
-
-
-/* Info page */
-.info {
-    background-image: url(../asset/images/bacgroung2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
 }
 
 /* Story */
@@ -294,7 +285,7 @@ body {
 /* Consultation */
 
 .consultation {
-    background: url(../asset/images/Bacground3.png) no-repeat center center fixed;
+    background: url(../asset/images/Bacground3.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 60vh;
     padding: 100px;
