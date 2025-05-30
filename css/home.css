@@ -65,16 +65,23 @@ body {
 
 /* Presentation */
 .presentation {
-    background-image: url("/asset/images/background1.png");
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 675px;
     padding: 0 30px 0 400px;
+    position: relative;
+    background: url(/asset/images/background1.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-top: 110px;
+    min-height: 500px;
+    letter-spacing: 2px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .presentaion_content {
     display: flex;
-    /* margin-left: 500px; */
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -105,23 +112,6 @@ body {
     color: #F3EFE8;
 }
 
-/* info */
-
-
-/* Footer */
-.footer_content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 100px;
-    /* background-color: var(--text-color); */
-}
-
-.social_media {
-    display: flex;
-    gap: 50px;
-}
-
 
 /* Info page */
 .info {
@@ -139,6 +129,15 @@ body {
 
 .story_title {
     text-align: center;
+}
+
+.story_title h2 {
+    color: var(--survol);
+    font-size: 30px;
+}
+
+.story_title p {
+    font-weight: 600;
 }
 
 .story_content {
@@ -175,19 +174,24 @@ body {
 }
 
 /* Service */
+
 .services_title {
     text-align: center;
     margin-top: 40px;
     font-size: 30px;
 }
+
+.services_title h2 {
+    color: var(--survol);
+}
+
 .service_item h3 {
     margin-top: 20px;
 }
 
 .services {
     background-color: var(--background-color);
-    padding: 70px;
-    margin-top: 80px;
+    padding: 20px 70px 70px;
     height: 100%;
 }
 
@@ -206,6 +210,8 @@ body {
     background-color: var(--background-prinp);
     padding: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    animation: pulse;
+    animation-duration: 1.5s;
 }
 
 .service_item:hover {
@@ -215,6 +221,10 @@ body {
 }
 
 .service_item img {
+    color: var(--survol);
+}
+
+.service_item h3 {
     color: var(--survol);
 }
 
@@ -244,3 +254,116 @@ body {
     color: #F3EFE8;
 }
 
+/* Testemony */
+.testemony {
+    padding: 40px;
+}
+.testemony_title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.testemony_title h2 {
+    color: var(--survol);
+}
+.testemony_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    padding: 50px;
+    gap: 60px;
+}
+
+.testemony_item {
+    width: 30%;
+    height: 110%;
+    background-color: var(--background-prinp);
+    padding: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    animation: pulse;
+    animation-duration: 1.5s;
+}
+
+.testemony_item img {
+    height: 100px;
+    margin-left: 120px;
+}
+
+/* Consultation */
+
+.consultation {
+    background: url(/asset/images/Bacground3.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 60vh;
+    padding: 100px;
+}
+
+.consultaion_content {
+    text-align: center;
+}
+
+.consultaion_content a{
+    text-decoration: none;
+    background-color: var(--text-color);
+    color: #F3EFE8;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+/* Footer */
+.footer_content {
+    background-color: var(--text-color);
+    color: var(--background-prinp);
+    padding: 30px 150px;
+}
+
+.footer_items {
+    display: flex;
+    gap: 200px;
+}
+
+.footer_item {
+    width: 30%;
+}
+
+.footer_item p {
+    text-align: justify;
+}
+
+.right {
+    border-top: 1px solid white;
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer_item h2>a {
+    color: var(--bouton);
+    text-decoration: none;
+
+}
+
+.footer_item h2 {
+    color: var(--bouton);
+}
+
+.footer_item ul>li {
+    list-style: none;
+}
+
+.footer_item ul>li a{
+    text-decoration: none;
+    color: var(--background-prinp);
+}
+
+.footer_item ul>li a:hover{
+    text-decoration: underline;
+}
