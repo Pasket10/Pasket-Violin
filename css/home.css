@@ -1,8 +1,8 @@
 * {
     font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,14 +19,12 @@
 
 body {
     background-color: var(--background-prinp);
-    /* color: var(--text-color); */
     font-family: 'Arial', sans-serif;
 }
 
 /* header */
 
 .header{
-    /* background-color: #ff5f; */
     padding: 30px 100px;
     display: flex;
     justify-content: space-between;
@@ -34,8 +32,6 @@ body {
 }
 
 .header__logo a{
-    /* font-size: 30px; */
-    /* font-weight: 700; */
     color: var(--text-color);
     text-decoration: none;
 }
@@ -187,7 +183,7 @@ body {
 }
 
 .services_content {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     height: 350px;
@@ -357,4 +353,26 @@ body {
 
 .footer_item ul>li a:hover{
     text-decoration: underline;
+}
+
+/* responsive */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        padding: 20px 50px;
+    }
+    
+    .header__nav ul {
+        display: none;
+    }
+    
+    .presentation {
+        background-size: 100vw 100vh;
+        /* background-size: cover; */
+        background-position: center;
+        padding: 0 30px 0 200px;
+    }
+    .text {
+        font-size: 30px;
+        color: var(--text-color);
+    }
 }
